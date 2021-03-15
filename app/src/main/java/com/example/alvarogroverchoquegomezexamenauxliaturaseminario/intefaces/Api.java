@@ -1,5 +1,6 @@
 package com.example.alvarogroverchoquegomezexamenauxliaturaseminario.intefaces;
 
+import com.example.alvarogroverchoquegomezexamenauxliaturaseminario.adapters.messageAdapter;
 import com.example.alvarogroverchoquegomezexamenauxliaturaseminario.adapters.structTask;
 
 
@@ -23,11 +24,12 @@ public interface Api {
     @GET("allTasks")
     Call<ArrayList<structTask>> getAlltasks();
 
+    @FormUrlEncoded
     @POST("newTask")
-    Call<structTask> newTask(@Query("id") String idRes);
+    Call<messageAdapter> newTask(@Field("title") String titleT, @Field("description") String descT);
 
     @DELETE("delTask")
-    Call<structTask> delUser(@Query("id") String idRes);
+    Call<messageAdapter> delUser(@Query("id") String idRes);
 }
 
 
