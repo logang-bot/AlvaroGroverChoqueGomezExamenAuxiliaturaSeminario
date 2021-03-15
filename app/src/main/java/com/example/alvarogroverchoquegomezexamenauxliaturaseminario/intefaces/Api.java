@@ -29,7 +29,7 @@ public interface Api {
     Call<messageAdapter> newTask(@Field("title") String titleT, @Field("description") String descT);
 
     @DELETE("delTask")
-    Call<messageAdapter> delUser(@Query("id") String idRes);
+    Call<messageAdapter> delUser(@Query("id") String id);
 }
 
 
