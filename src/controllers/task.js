@@ -29,5 +29,10 @@ ctrl.deleteTask = async (req, res) => {
   await task.findByIdAndDelete(id);
   res.send({ message: "the task was deleted now" });
 };
+ctrl.getOnetask = async (req, res) => {
+  const id = req.query.id;
+  const data = await task.findById(id);
+  res.send(data);
+};
 
 module.exports = ctrl;

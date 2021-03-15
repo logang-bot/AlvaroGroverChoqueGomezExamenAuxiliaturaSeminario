@@ -6,6 +6,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/allTasks", task.getAll);
+router.get("/oneTask", task.getOnetask);
 router.post("/newTask", task.newTask);
 router.delete("/delTask", task.deleteTask);
 
