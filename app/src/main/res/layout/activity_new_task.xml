@@ -25,6 +25,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="title" />
@@ -42,6 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descriptionTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="description" />

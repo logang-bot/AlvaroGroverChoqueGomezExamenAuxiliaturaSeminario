@@ -32,8 +32,8 @@ public class newTask extends AppCompatActivity {
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextInputEditText newTitle = root.findViewById(R.id.textInputLayout);
-                TextInputEditText newDescription = root.findViewById(R.id.textInputLayout2);
+                TextInputEditText newTitle = root.findViewById(R.id.titleTask);
+                TextInputEditText newDescription = root.findViewById(R.id.descriptionTask);
 
                 String title = newTitle.getText().toString().trim();
                 String description = newDescription.getText().toString().trim();
